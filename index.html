@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sydney Smullen | UGC Creator</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Caveat:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4ecdf;--ink:#111111;--pink:#a8d4f5;--lav:#e6d9c3;--yel:#a8d4f5;--mint:#ffffff;--card:#ffffff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111111;--ink:#f4ecdf;--card:#1e1e1e}}
+:root[data-theme="dark"]{--bg:#111111;--ink:#f4ecdf;--card:#1e1e1e}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.5;overflow-x:hidden}
+h1,h2,h3{font-family:'Bricolage Grotesque','Arial Black',sans-serif;font-weight:400;margin:0;line-height:1}
+.script{font-family:'Caveat',cursive;font-size:1.6rem;color:var(--ink);display:inline-block;background:linear-gradient(transparent 58%,#a8d4f5 58%);padding:0 4px}
+.wrap{max-width:1050px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;padding:12px 16px}
+nav{max-width:1050px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:3px solid var(--ink);border-radius:999px;padding:8px 10px 8px 12px;box-shadow:4px 4px 0 var(--ink)}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-family:'Bricolage Grotesque','Arial Black',sans-serif;font-size:1.15rem}
+.logo i{font-style:normal;width:38px;height:38px;border-radius:50%;background:#a8d4f5;color:#111;border:3px solid var(--ink);display:grid;place-items:center;font-size:.95rem}
+.links{display:flex;gap:4px;align-items:center}
+.links a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:999px}
+.links a:hover{background:#a8d4f5;color:#111}
+.links a.cta{background:var(--ink);color:var(--bg);margin-left:6px}
+.links a.cta:hover{background:#a8d4f5;color:#111}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:3px solid var(--ink);border-radius:999px;padding:5px 14px;font-weight:700;font-size:.85rem;margin-bottom:16px}
+.badge:before{content:"";width:10px;height:10px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 3px #3ddc8455}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{background:var(--card);border:2px solid var(--ink);border-radius:999px;padding:4px 12px;font-size:.82rem;font-weight:700}
+.blob{position:absolute;inset:8% -6% -6% 8%;background:#a8d4f5;border:3px solid var(--ink);border-radius:38% 62% 55% 45%/50% 40% 60% 50%;transform:rotate(-6deg)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);border:3px solid var(--ink);border-radius:999px;padding:12px 24px;font-weight:700;text-decoration:none;box-shadow:4px 4px 0 var(--ink);font-size:1rem}
+.btn.alt{background:#a8d4f5;color:#111}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;padding:30px 0 50px}
+.hero h1{font-size:clamp(2.6rem,8vw,5.2rem)}
+.hero h1 span{background:var(--yel);color:#111;padding:0 10px;border-radius:12px;display:inline-block;transform:rotate(-2deg)}
+.hero p{font-size:1.1rem;max-width:460px}
+.sticker{position:absolute;z-index:3;background:var(--mint);color:#111;border:3px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:700;font-size:.85rem;transform:rotate(8deg);z-index:2}
+.marq{background:var(--ink);color:var(--bg);font-family:'Bricolage Grotesque','Arial Black',sans-serif;padding:12px 0;font-size:1.2rem;overflow:hidden;white-space:nowrap}
+.marq span{display:inline-block;animation:m 22s linear infinite}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:60px 0}
+.head{margin-bottom:26px}.head h2{font-size:clamp(2rem,6vw,3.4rem)}
+.slot{position:relative;border:3px dashed var(--ink);border-radius:22px;background:var(--card);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;transition:.2s}
+.slot:hover{transform:rotate(-1deg) scale(1.02);border-color:var(--pink)}
+.slot.v{aspect-ratio:9/16}.slot.p{aspect-ratio:4/5}.slot.brand{aspect-ratio:2/1}
+.slot .ph{padding:12px;font-weight:700}.slot .ph i{display:block;font-style:normal;font-size:2.2rem}.slot .ph small{display:block;font-weight:400;opacity:.7}
+.slot video,.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slot.brand img{object-fit:contain;padding:8px;background:#fff}
+.slot input{display:none}
+.slot .x{position:absolute;top:8px;right:8px;z-index:3;background:#a8d4f5;color:#111;border:2px solid var(--ink);border-radius:50%;width:30px;height:30px;font-weight:700;cursor:pointer;display:none}
+.slot.has .x{display:block}.slot.has{border-style:solid}
+.grid{display:grid;gap:18px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+.tag{margin:8px 4px 0;font-weight:700;font-size:.9rem}
+.about{display:grid;grid-template-columns:1fr 1.3fr;gap:30px;align-items:center}
+.pills span{display:inline-block;background:var(--lav);color:#111;border:2px solid var(--ink);border-radius:999px;padding:5px 14px;margin:4px 4px 0 0;font-weight:700;font-size:.85rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:center}
+.stat{background:var(--yel);color:#111;border:3px solid var(--ink);border-radius:20px;padding:18px 8px;box-shadow:5px 5px 0 var(--ink)}
+.stat:nth-child(2){background:var(--mint)}.stat:nth-child(3){background:var(--lav)}.stat:nth-child(4){background:#e6d9c3}
+.stat b{font-family:'Bricolage Grotesque','Arial Black',sans-serif;font-size:2rem;display:block;font-weight:400}
+.card{background:var(--card);border:3px solid var(--ink);border-radius:22px;padding:22px;box-shadow:6px 6px 0 var(--ink)}
+.card h3{font-size:1.5rem;margin-bottom:6px}.card .price{font-family:'Bricolage Grotesque','Arial Black',sans-serif;font-size:1.8rem;color:var(--ink)}
+.card ul{padding-left:18px;margin:10px 0 0}
+.brands{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.steps{counter-reset:s}.step{position:relative;padding-left:56px;margin-bottom:16px}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:42px;height:42px;background:#a8d4f5;color:#111;border:3px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-family:'Bricolage Grotesque','Arial Black',sans-serif}
+.quote{font-family:'Caveat';font-size:1.5rem}
+.contact{background:var(--ink);color:var(--bg);border-top:4px solid #a8d4f5;text-align:center;padding:70px 0}
+.contact h2{font-size:clamp(2.2rem,7vw,4.4rem)}
+.contact a.big{display:block;color:var(--bg);font-weight:700;font-size:clamp(1.1rem,4vw,1.8rem);margin:8px 0;text-decoration:none}
+footer{text-align:center;padding:20px;font-size:.85rem}
+
+.ann{background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;font-weight:700;font-size:.85rem;letter-spacing:.08em;padding:8px 0}
+.ann span{display:inline-block;animation:m 28s linear infinite}
+.ann b{color:#a8d4f5;margin:0 14px}
+.hero2{max-width:1050px;margin:auto;padding:24px 20px 70px;display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;position:relative}
+.giant{font-size:clamp(3rem,10.5vw,7.4rem);line-height:1;letter-spacing:1px;font-weight:400;margin:6px 0 20px}
+.giant .o{color:var(--ink);display:inline-block;text-shadow:5px 5px 0 #a8d4f5}
+.giant .fill{background:#a8d4f5;color:#111;padding:0 14px;border-radius:18px;display:inline-block;transform:rotate(-2deg);border:3px solid var(--ink);box-shadow:7px 7px 0 var(--ink);margin-top:8px}
+.tagline{font-size:1.15rem;max-width:440px;margin:0 0 22px}
+.fan{position:relative;height:480px}
+.fan .slot{position:absolute;box-shadow:6px 6px 0 var(--ink)}
+.f1{left:0;top:70px;width:41%;transform:rotate(-9deg);z-index:1}
+.f2{left:25%;top:0;width:50%;transform:rotate(2deg);z-index:2}
+.f3{right:0;top:100px;width:41%;transform:rotate(8deg);z-index:1}
+.stamp{position:absolute;right:-6px;bottom:-14px;width:118px;height:118px;z-index:5}
+.stamp svg{width:100%;height:100%;animation:spin 14s linear infinite}
+.stamp span{position:absolute;inset:0;display:grid;place-items:center;font-size:1.8rem}
+.fl{position:absolute;z-index:4;background:var(--card);border:3px solid var(--ink);border-radius:999px;padding:4px 12px;font-weight:700;font-size:.85rem;animation:bob 3s ease-in-out infinite;box-shadow:3px 3px 0 var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-10px) rotate(3deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+@media(max-width:800px){.hero2{grid-template-columns:1fr;padding-bottom:50px}.fan{height:400px}.stamp{width:92px;height:92px}.links a:not(.cta){display:none}.logo span{font-size:1rem}.hero,.about{grid-template-columns:1fr}.g4,.stats,.brands{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr}nav a{margin-left:10px}}
+.logo,.marq,.step:before,.price,.stat b,.giant,h1,h2,h3,.quote{font-weight:800}
+h1,h2,h3{letter-spacing:-.03em}
+.giant{letter-spacing:-.045em;line-height:.95;font-size:clamp(3.2rem,11vw,7.8rem)}
+.giant .fill{border-radius:14px;padding:0 12px}
+.hero2 .script{font-family:'DM Sans',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;background:none;padding:0}
+.giant{font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:clamp(4rem,14vw,9.5rem);line-height:.86;letter-spacing:-.03em;margin:8px 0 22px}
+.giant .o{color:var(--ink);text-shadow:none;font-weight:400}
+.giant .fill{background:none;border:0;box-shadow:none;transform:none;padding:0 6px;margin:0;font-style:italic;color:var(--ink);position:relative;display:inline-block;z-index:0}
+.giant .fill:before{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.32em;background:#a8d4f5;z-index:-1;border-radius:6px;transform:rotate(-1.5deg)}
+.hero2{align-items:start}
+.hero2>div:first-child{padding-top:6px}
+.giant{margin-top:4px;text-align:left}
+.giant .fill{padding:0 6px 0 0}
+
+.slot{border-style:solid;cursor:default}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+a.slot{cursor:pointer;color:inherit;text-decoration:none}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:62px;height:62px;border-radius:50%;background:#a8d4f5;border:3px solid #111;display:grid;place-items:center;font-size:1.4rem;color:#111;box-shadow:3px 3px 0 #111}
+.ig{position:absolute;left:10px;bottom:10px;z-index:2;background:#fff;color:#111;border:2px solid #111;border-radius:999px;padding:3px 10px;font-size:.75rem;font-weight:700}
+.btile{border:3px solid var(--ink);border-radius:22px;background:#a8d4f5;color:#111;padding:22px;text-decoration:none;box-shadow:5px 5px 0 var(--ink);display:block;max-width:420px}
+.btile b{font-family:'Instrument Serif',serif;font-size:2.2rem;font-weight:400;display:block}
+.stats{margin-top:20px}html,body{overflow-x:clip}
+.igg{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.igcard{background:var(--card);border:3px solid var(--ink);border-radius:22px;box-shadow:6px 6px 0 var(--ink);padding:10px;overflow:hidden}.igfb{background:#a8d4f5;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;height:620px;color:#111;text-decoration:none;position:relative}.igfb .play{position:static;transform:none}.igfb b{font-size:1.1rem}.igcard iframe{border-radius:14px!important}.igcard .tag a{color:inherit}@media(max-width:800px){.igg{grid-template-columns:1fr}}.fan,.hero2{overflow-x:clip}
+.igcard video{display:block;width:100%;aspect-ratio:9/16;border-radius:14px;background:#111;object-fit:cover}
+</style>
+</head>
+<body>
+<div class="ann"><span>NOW BOOKING UGC<b>✦</b>REVIEWS<b>✦</b>UNBOXINGS<b>✦</b>GRWM<b>✦</b>PRODUCT DEMOS<b>✦</b>NOW BOOKING UGC<b>✦</b>REVIEWS<b>✦</b>UNBOXINGS<b>✦</b>GRWM<b>✦</b>PRODUCT DEMOS<b>✦</b>NOW BOOKING UGC<b>✦</b>REVIEWS<b>✦</b>UNBOXINGS<b>✦</b>GRWM<b>✦</b>PRODUCT DEMOS<b>✦</b>NOW BOOKING UGC<b>✦</b>REVIEWS<b>✦</b>UNBOXINGS<b>✦</b>GRWM<b>✦</b>PRODUCT DEMOS<b>✦</b></span></div>
+<header><nav>
+  <a class="logo" href="#top"><i>SS</i><span>Sydney Smullen</span></a>
+  <div class="links"><a href="#work">Work</a><a href="#rates">Rates</a><a href="#about">About</a><a href="https://www.instagram.com/ugc.syds/" target="_blank" rel="noopener">Instagram</a><a class="cta" href="#contact">Hire me ✨</a></div>
+</nav></header>
+
+<div class="hero2" id="top">
+  <div>
+    <div class="badge">Available for UGC collabs</div>
+    <div class="script">hi, I'm</div>
+    <h1 class="giant"><span class="o">Sydney</span><br><span class="fill">Smullen</span></h1>
+    <p class="tagline">UGC creator making <b>real, relatable</b> lifestyle, fashion, fitness + travel content. I work in sales, so I know what makes people buy.</p>
+    <p><a class="btn" href="#contact">Work with me</a> &nbsp; <a class="btn alt" href="#work">See my videos</a></p>
+    <div class="chips"><span>🧸 Cozy apparel</span><span>🏋️ Fitness</span><span>✈️ Travel</span><span>🐈‍⬛ Pets</span><span>🛋️ Home</span></div>
+  </div>
+  <div class="fan">
+    <div class="slot v f1"><img src="images/beach.jpg" alt="Syd smiling on the beach"></div>
+    <div class="slot p f2"><img src="images/polka.jpg" alt="Syd in a polka-dot top"></div>
+    <div class="slot v f3"><img src="images/window.jpg" alt="Syd in a blue dress by a window"></div>
+    <div class="fl" style="left:2%;top:0">☀️ beach + sun lover</div>
+    <div class="fl" style="right:4%;top:40px;animation-delay:.8s">♡ real + relatable</div>
+    <div class="fl" style="left:8%;bottom:0;animation-delay:1.4s">📈 I know what makes people buy</div>
+    <div class="stamp"><svg viewBox="0 0 120 120"><defs><path id="c" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs><circle cx="60" cy="60" r="58" fill="#a8d4f5" stroke="#111" stroke-width="3"/><text font-size="11" font-weight="700" fill="#111" letter-spacing="1.5"><textPath href="#c">OPEN FOR COLLABS • BOOK ME • </textPath></text></svg><span>✨</span></div>
+  </div>
+</div>
+
+<div class="marq"><span>UGC ✿ HOOKS ✿ UNBOXINGS ✿ REVIEWS ✿ GRWM ✿ TESTIMONIALS ✿ PRODUCT DEMOS ✿ UGC ✿ HOOKS ✿ UNBOXINGS ✿ REVIEWS ✿ GRWM ✿ TESTIMONIALS ✿ PRODUCT DEMOS ✿ </span></div>
+
+<section class="wrap" id="work">
+  <div class="head"><div class="script">the good stuff</div><h2>My Videos</h2><p>Tap play to watch, or see more on <a href="https://www.instagram.com/ugc.syds/" target="_blank" rel="noopener">@ugc.syds</a>.</p></div>
+  <div class="grid igg" id="videos"><div class="igcard"><video controls playsinline preload="metadata" poster="videos/shorties-hoodie.jpg"><source src="videos/shorties-hoodie.mp4" type="video/mp4"></video><div class="tag">✿ Cozy hoodie POV for Shorties Clothing <a href="https://www.instagram.com/reel/Ddwf_cFRtcz/" target="_blank" rel="noopener">@ugc.syds ↗</a></div></div><div class="igcard"><video controls playsinline preload="metadata" poster="videos/travel.jpg"><source src="videos/travel.mp4" type="video/mp4"></video><div class="tag">✿ Travel reel ✈️ <a href="https://www.instagram.com/reel/DeO0ldtslh4/" target="_blank" rel="noopener">@ugc.syds ↗</a></div></div><div class="igcard"><video controls playsinline preload="metadata" poster="videos/animal-kingdom.jpg"><source src="videos/animal-kingdom.mp4" type="video/mp4"></video><div class="tag">✿ Animal Kingdom day in my life <a href="https://www.instagram.com/reel/DeDaCZhxQvT/" target="_blank" rel="noopener">@ugc.syds ↗</a></div></div></div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <div class="head"><div class="script">pretty pics</div><h2>Photo Gallery</h2><p>Lifestyle, fashion, fitness, and a little Mila.</p></div>
+  <div class="grid g4" id="photoGrid"><div class="slot p"><img src="images/dress.jpg" alt="Syd in a full-length blue dress" loading="lazy"></div><div class="slot p"><img src="images/mila.jpg" alt="Mila, my black cat" loading="lazy"></div><div class="slot p"><img src="images/gym.jpg" alt="Gym selfie" loading="lazy"></div><div class="slot p"><img src="images/beach.jpg" alt="Beach day" loading="lazy"></div></div>
+</section>
+
+<section class="wrap">
+  <div class="stats">
+    <div class="stat"><b>1K+</b>views in 30 days</div>
+    <div class="stat"><b>75%</b>non-follower reach</div>
+    <div class="stat"><b>136</b>profile visits</div>
+    <div class="stat"><b>60</b>interactions</div>
+  </div>
+  <p style="text-align:center;opacity:.7;font-size:.85rem">Instagram insights, last 30 days (Oct 2026)</p>
+</section>
+
+<section class="wrap" id="about">
+  <div class="about">
+    <div class="slot p" style="transform:rotate(-3deg)"><img src="images/dress.jpg" alt="Syd in a blue dress"></div>
+    <div>
+      <div class="script">a little about me</div><h2>Hi, I'm Sydney!</h2>
+      <p style="margin-top:14px">I'm Syd, 25, and by day I work in sales, so I know what makes people buy. I bring that into every piece of UGC I make: content that feels like a recommendation from a friend, not an ad.</p><p>When I'm not filming, you'll find me at the gym, soaking up the sun at the beach, hanging out with my black cat Mila, or listening to music (yes, I'm a huge Harry Styles fan). I'm also obsessed with interior design and making spaces feel cozy.</p>
+      <div class="pills"><span>Lifestyle</span><span>Fashion &amp; cozy apparel</span><span>Fitness</span><span>Travel &amp; day-in-my-life</span><span>Pets</span><span>Home &amp; decor</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="rates">
+  <div class="head"><div class="script">let's make magic</div><h2>What I Offer</h2></div>
+  <div class="grid g3">
+    <div class="card"><h3>Single Video</h3><div class="price">Custom quote</div><ul><li>1 UGC video, 15–30 sec</li><li>Hook + CTA</li><li>1 round of edits</li></ul></div>
+    <div class="card" style="background:var(--yel);color:#111"><h3>Bundle ★</h3><div class="price" style="color:#111">Let's chat</div><ul><li>3 UGC videos, different hooks</li><li>5 product photos</li><li>Raw footage included</li></ul></div>
+    <div class="card"><h3>Monthly Creator</h3><div class="price">Custom quote</div><ul><li>6+ videos per month</li><li>Priority turnaround</li><li>Usage rights included</li></ul></div>
+  </div>
+  <p style="opacity:.7;font-size:.85rem">Every brand is different. <a href="mailto:ssmullenmarie@gmail.com?subject=UGC%20Rates">Email me</a> for a quote tailored to your goals.</p>
+</section>
+
+<section class="wrap">
+  <div class="head"><div class="script">brands I've created for</div><h2>Brands</h2></div>
+  <a class="btile" href="https://www.instagram.com/shorties.clothing/" target="_blank" rel="noopener"><b>Shorties Clothing</b>@shorties.clothing · cozy hoodie POV reel, my top post</a>
+</section>
+
+<section class="wrap">
+  <div class="about">
+    <div>
+      <div class="head"><div class="script">how it works</div><h2>Easy Process</h2></div>
+      <div class="steps">
+        <div class="step"><b>Reach out</b><br>Tell me about your product and goals.</div>
+        <div class="step"><b>Brief + product</b><br>You send the brief and I get the product.</div>
+        <div class="step"><b>I create</b><br>Script, film, edit, delivered fast.</div>
+        <div class="step"><b>Revise + launch</b><br>Tweaks if needed, then you post!</div>
+      </div>
+    </div>
+    <div class="card" style="transform:rotate(2deg)"><div class="script">why brands work with me</div><p class="quote">I spend my days in sales, so I know what makes people buy.</p><p>I build every video around a real hook, an honest reason to care, and a clear call to action. And 75% of my views come from people who don't follow me yet.</p></div>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <div class="wrap">
+    <div class="script" style="color:#111;background:#a8d4f5">ready when you are</div>
+    <h2>Let's Create Together!</h2>
+    <p>Sydney Smullen · UGC Creator</p>
+    <a class="big" href="mailto:ssmullenmarie@gmail.com">✉ ssmullenmarie@gmail.com</a>
+    <a class="big" href="tel:5174040098">☎ (517) 404-0098</a>
+    <a class="big" href="https://www.instagram.com/ugc.syds/" target="_blank" rel="noopener">📸 @ugc.syds</a>
+    <p style="margin-top:24px"><a class="btn alt" href="mailto:ssmullenmarie@gmail.com?subject=UGC%20Collab">Email me</a></p>
+  </div>
+</div>
+<footer>© 2026 Sydney Smullen ✿ Made with love</footer>
+
+</body>
+</html>
